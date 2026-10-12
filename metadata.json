@@ -1,0 +1,6 @@
+{
+  "name": "AyushKaya – Panchkarma & Ayurvedic Health Tracking",
+  "description": "Authentic Ayurvedic Panchkarma therapies (24 classical modalities), personalized health tracking, dosha assessment, and AI Ayurvedic assistant in Sainipuram, Roorkee.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
