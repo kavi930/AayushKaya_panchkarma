@@ -48,7 +48,12 @@ export const FeaturedTherapies: React.FC<FeaturedTherapiesProps> = ({
                     loading="lazy"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
+                      const target = e.currentTarget;
+                      if (!target.src.includes('/images/')) {
+                        if (therapy.id === 'kati-basti') target.src = '/images/kati_basti_therapy_1791120457652.jpg';
+                        else if (therapy.id === 'shirodhara') target.src = '/images/shirodhara_therapy_1791120431726.jpg';
+                        else if (therapy.id === 'patar-potli-pind-awedan') target.src = '/images/potli_swedana_therapy_1791120444673.jpg';
+                      }
                     }}
                   />
                 ) : (

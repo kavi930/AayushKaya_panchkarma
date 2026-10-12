@@ -1,3 +1,8 @@
+import heroImg from '../assets/images/hero_ayurveda_panchkarma_1791120408611.jpg';
+import shirodharaImg from '../assets/images/shirodhara_therapy_1791120431726.jpg';
+import potliImg from '../assets/images/potli_swedana_therapy_1791120444673.jpg';
+import katiBastiImg from '../assets/images/kati_basti_therapy_1791120457652.jpg';
+
 export interface Therapy {
   id: string;
   number: number;
@@ -55,10 +60,10 @@ export const BRAND: BrandConfig = {
   practitionerBio: "Dedicated to the classical tradition of Ayurvedic wellness, A.K. Goswami brings attentive, one-on-one personalized care to every therapy session. Emphasizing patient comfort, natural harmony, and authentic procedural precision, sessions are delivered both at the Sainipuram wellness space and in the comfort of your home.",
   qualificationsNote: "Qualifications and verified certification credentials as provided by the practitioner. Please contact directly for credential documentation and consultation inquiries.",
   images: {
-    hero: "/src/assets/images/hero_ayurveda_panchkarma_1791120408611.jpg",
-    shirodhara: "/src/assets/images/shirodhara_therapy_1791120431726.jpg",
-    potli: "/src/assets/images/potli_swedana_therapy_1791120444673.jpg",
-    katiBasti: "/src/assets/images/kati_basti_therapy_1791120457652.jpg",
+    hero: heroImg,
+    shirodhara: shirodharaImg,
+    potli: potliImg,
+    katiBasti: katiBastiImg,
     practitioner: null,
   },
 };

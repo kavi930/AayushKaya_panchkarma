@@ -117,8 +117,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   referrerPolicy="no-referrer"
                   loading="eager"
                   onError={(e) => {
-                    // Graceful fallback container if local asset is being indexed
-                    e.currentTarget.style.display = 'none';
+                    const target = e.currentTarget;
+                    if (!target.src.includes('/images/')) {
+                      target.src = '/images/hero_ayurveda_panchkarma_1791120408611.jpg';
+                    }
                   }}
                 />
 
